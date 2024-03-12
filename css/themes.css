@@ -4,13 +4,20 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- @font-face {
+ /* @font-face {
   font-family: 'HelveticaNeueLT';
   src: url('../fonts/_HelveticaNeueLT\ B.otf');
   src: url('../fonts/_HelveticaNeueLT.otf') ;
   src: url('../fonts/HelveticaNeueLT\ B.otf'); 
   src: url('../fonts/HelveticaNeueLT.otf') ;
-      }
+      } */
+      @font-face {
+        font-family:'bahij';
+        src: url('../fonts/Bahij_TheSansArabic-Plain.ttf');
+        src: url('../fonts/Bahij_TheSansArabic-ExtraLight.ttf') ;
+        src: url('../fonts/ArbFONTS-Bahij_TheSansArabic-Bold.ttf'); 
+            }
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -74,11 +81,15 @@ body {
   color: #7E7E7E;
   text-align: left;
   background-color: #fff;
-  font-family: 'HelveticaNeueLT';
+  /* font-family: 'HelveticaNeueLT';
   src: url('../fonts/_HelveticaNeueLT\ B.otf');
   src: url('../fonts/_HelveticaNeueLT.otf') ;
   src: url('../fonts/HelveticaNeueLT\ B.otf'); 
-  src: url('../fonts/HelveticaNeueLT.otf') ;
+  src: url('../fonts/HelveticaNeueLT.otf') ; */
+    font-family:'bahij';
+    src: url('../fonts/Bahij_TheSansArabic-Plain.ttf');
+    src: url('../fonts/Bahij_TheSansArabic-ExtraLight.ttf') ;
+    src: url('../fonts/ArbFONTS-Bahij_TheSansArabic-Bold.ttf'); 
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -177,7 +188,7 @@ a {
 }
 
 a:hover {
-  color: #4E7661;
+  color:#7e7e7e;
   text-decoration: underline;
 }
 
@@ -2335,7 +2346,7 @@ pre code {
   font-weight: 500;
   line-height: 1.6;
   color: #000;
-  background-color: #F5F5F5;
+  background-color: var(--white);
   background-clip: padding-box;
   border: 1px solid #3F4A3C33;
   border-radius: 3px;
@@ -3384,7 +3395,9 @@ fieldset:disabled a.btn {
   background-color: #000;
   border-color: #000;
 }
-
+.btn-outline-secondary:hover > i{
+  color: var(--white) !important;
+}
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
@@ -7811,7 +7824,7 @@ button.bg-violet:focus {
 }
 
 .border-0 {
-  border: 0 !important;
+  border: 1px solid #e8e8e8 !important;
 }
 
 .border-top-0 {
@@ -17576,7 +17589,7 @@ a.text-violet:hover, a.text-violet:focus {
 }
 
 .border-0 {
-  border: none !important;
+  border: 1px solid #e8e8e8 !important;
 }
 
 .shadow-none {
@@ -17988,7 +18001,7 @@ a.text-violet:hover, a.text-violet:focus {
 }
 
 .letter-spacing-01 {
-  letter-spacing: 0.1em !important;
+  /* letter-spacing: unset !important; */
 }
 
 .letter-spacing-015 {
@@ -18032,7 +18045,7 @@ a.text-violet:hover, a.text-violet:focus {
 }
 
 .bg-gray-2 {
-  background-color: #F5F5F5;
+  background-color: #fff;
 }
 
 .bg-cover {
@@ -20969,7 +20982,7 @@ a.hover-violet:focus {
 }
 
 .bg-hover-primary:hover {
-  background-color: #4E7661 !important;
+  background-color: #343a40 !important;
 }
 
 .bg-hover-secondary:hover {
@@ -21017,7 +21030,7 @@ a.hover-violet:focus {
 }
 
 a.bg-hover-primary:hover {
-  background-color: #4E7661 !important;
+  background-color: #343a40 !important;
 }
 
 a.bg-hover-primary:focus {
@@ -22322,7 +22335,7 @@ input.checkbox-primary[type="checkbox"] {
   height: 18px;
   width: 18px;
   color: #fff;
-  line-height: 16.5px;
+  /* line-height: 16.5px; */
   border-radius: 50%;
   text-align: center;
 }
@@ -23877,4 +23890,17 @@ h2, .h2 {
 #accordion-style-01 .card-header {
   padding: 1rem !important;
   background-color: #F5F5F5 !important;
+}
+.form-control-01 .dropdown {
+  background-color: var(--white) !important;
+  border: 1px solid #e8e8e8 !important;
+}
+.require-text{
+  color: var(--red);
+}
+#accordion-style-01 .border-0{
+  border: unset !important;
+}
+#accordion-style-01 .form-control-01 .border-0{
+  border: 1px solid #e8e8e8 !important;
 }

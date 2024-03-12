@@ -225,6 +225,8 @@
             <div class="col-md-12">
               <div class="tab-content pt-5" id="v-pills-tabContent">
                 <div class="tab-pane fade show edit-details change-pass active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="row">
+                  <div class="col-md-8">
                   <form class="table-responsive-md pb-8 pb-lg-10">
                     <table class="table border text-center justify-content-center align-items-center">
                       <thead style="background-color: #F5F5F5">
@@ -563,7 +565,7 @@
                     متابعة التسوق
                   </button>
                   <button type="submit" value="Clear Shopping Cart"
-                  class="btn btn-link p-0 border-0 border-bottom border-secondary rounded-0 my-3"><i
+                  class="btn btn-outline-secondary border-2x border mr-5 border-hover-secondary my-3"><i
                   class="fal fa-times mr-2 text-secondary"></i>افراغ السلة
       </button>
       <button type="submit" value="Update Cart"
@@ -578,19 +580,12 @@
                       </tbody>
                     </table>
                   </form>
-                  <div class="row mb-10">
-                    <div class="col-lg-6 pt-2">
-                      <h4 class="fs-24 mb-3">Coupon Discount</h4>
-                      <p class="">Enter you coupon code if you have one.</p>
-                      <form>
-                        <input type="text" class="border-0 form-control mb-4" placeholder="Enter coupon code here">
-                        <button type="submit" class="btn btn-secondary bg-hover-primary border-hover-primary">
-                          Apply coupon
-                        </button>
-                      </form>
-                    </div>
+                  </div>
+                  <div class="col-md-4">
+                  <div class="mb-10">
+                 
                   
-                    <div class="col-lg-6 pt-lg-0 pt-11">
+                    <div class="pt-lg-0 pt-11">
                       <div class="card border-0" style="box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)">
                         <div class="card-body px-6 pt-5">
                           <div class="d-flex align-items-center mb-2">
@@ -607,6 +602,14 @@
                             <span class="text-secondary">Total pricre:</span>
                             <span class="d-block ml-auto text-secondary fs-24 font-weight-bold">$99.00</span>
                           </div>
+                          <div class="">
+                            <h4 class="fs-24 mb-3">Coupon Discount</h4>
+                            <p class="">Enter you coupon code if you have one.</p>
+                            <form>
+                              <input type="text" class="border-0 form-control mb-4" placeholder="Enter coupon code here">
+                             
+                            </form>
+                          </div>
                           <button type="submit" class="btn btn-secondary btn-block bg-hover-primary border-hover-primary"
                                         value="Check Out">Check Out
                           </button>
@@ -614,6 +617,8 @@
                       </div>
                     </div>
                   </div>
+                  </div>
+                </div>  
                 <div class="text-center prev-pane ">
                     <a
                     class="btnNext btn btn-secondary bg-hover-primary border-hover-primary"
@@ -624,109 +629,165 @@
                 <div class="tab-pane fade edit-details change-pass" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                 
                       <h2 class="text-center mb-3">Shipping Address </h2>
-                      <form>
-                        <div class="row">
-                          <div class="col-md-10 m-auto form-control-01">
-                        
-                            <h4 class="fs-24 pt-1 ">Enter Your Address</h4>
-                            <span class="d-block mb-4">All Fields with * are Required !</span>
-                            <div class="mb-3">
-                              <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">full name *</label>
-                              <div class="row">
-                                <div class="col-md-12 mb-md-0 mb-4">
-                                  <input type="text" class="form-control border-0" id="first-name" name="firstname"
-                                                   placeholder="Full Name " required="">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <form>
+                          <div class="row">
+                            <div class="col-md-10 m-auto form-control-01">
+                          
+                              <h4 class="fs-24 pt-1 ">Enter Your Address</h4>
+                              <span class="d-block mb-4 require-text">All Fields with * are Required !</span>
+                              <div class="mb-3">
+                                <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">full name *</label>
+                                <div class="row">
+                                  <div class="col-md-12 mb-md-0 mb-4">
+                                    <input type="text" class="form-control border-0" id="first-name" name="firstname"
+                                                     placeholder="Full Name " required="">
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="mb-3">
-                              <label
-                                           class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Country *</label>
-                              <div class="dropdown show lh-1 rounded mb-4" style="background-color:#f5f5f5">
-                                <a href="#"
-                                           class="dropdown-toggle custom-dropdown-toggle text-decoration-none text-secondary p-3 position-relative d-block"
-                                           id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                           aria-expanded="false">
-                                  Viet Nam
-                                </a>
-                                <div class="dropdown-menu custom-dropdown-item" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Andorra</a>
-                                  <a class="dropdown-item" href="#">San Marino</a>
-                                  <a class="dropdown-item" href="#">Tunisia</a>
-                                  <a class="dropdown-item" href="#">Micronesia</a>
-                                  <a class="dropdown-item" href="#">Solomon Islands</a>
-                                  <a class="dropdown-item" href="#">Macedonia</a>
+                              <div class="mb-3">
+                                <label
+                                             class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Country *</label>
+                                <div class="dropdown show lh-1 rounded mb-4" style="background-color:#f5f5f5">
+                                  <a href="#"
+                                             class="dropdown-toggle custom-dropdown-toggle text-decoration-none text-secondary p-3 position-relative d-block"
+                                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                             aria-expanded="false">
+                                    Viet Nam
+                                  </a>
+                                  <div class="dropdown-menu custom-dropdown-item" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Andorra</a>
+                                    <a class="dropdown-item" href="#">San Marino</a>
+                                    <a class="dropdown-item" href="#">Tunisia</a>
+                                    <a class="dropdown-item" href="#">Micronesia</a>
+                                    <a class="dropdown-item" href="#">Solomon Islands</a>
+                                    <a class="dropdown-item" href="#">Macedonia</a>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col-md-6 mb-md-0 mb-4">
-                                  <label for="city" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">City *</label>
-                                  <input type="text" class="form-control border-0" id="city" name="city" required="">
-                                </div>
-                                <div class="col-md-6 mb-md-0 mb-4">
-                                  <label for="state" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">State *</label>
-                                  <input type="text" class="form-control border-0" id="state" name="state" required="">
-                                </div>
-                             
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col-md-6 mb-md-0 mb-4">
-                                  <label for="street-address"
-                                                   class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Street
-                                    Address *</label>
-                                  <input type="text" class="form-control border-0" id="street-address"
-                                                   name="streetaddress" required="">
-                                </div>
-                                <div class="col-md-6">
-                                  <label for="apt" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Address in Detail *</label>
-                                  <input type="text" class="form-control border-0" id="apt" name="apt" required="" placeholder="Apartment num , Architecture Num">
+                              <div class="mb-3">
+                                <div class="row">
+                                  <div class="col-md-12 mb-md-0 mb-4">
+                                    <label for="city" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">City *</label>
+                                    <input type="text" class="form-control border-0" id="city" name="city" required="">
+                                  </div>
                                 </div>
                               </div>
-                            </div>
+                              <div class="mb-3">
+                                <div class="row">
+                                  <div class="col-md-12 mb-md-0 mb-4">
+                                    <label for="city" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Piece *</label>
+                                    <input type="text" class="form-control border-0" required="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <div class="row">
+                                  <div class="col-md-12 mb-md-0 mb-4">
+                                    <label for="street-address"
+                                                     class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Street
+                                      Address *</label>
+                                    <input type="text" class="form-control border-0" id="street-address"
+                                                     name="streetaddress" required="">
+                                  </div>
+                               
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <label for="apt" class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Address in Detail *</label>
+                                    <input type="text" class="form-control border-0" id="apt" name="apt" required="" placeholder="Apartment num , Architecture Num">
+                                  </div>
+                               
+                                </div>
+                              </div>
                            
-                         
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col-md-6 mb-md-0 mb-4">
-                              <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">email address</label>
-                                  <input type="email" class="form-control border-0" id="email" name="email"
-                                                   placeholder="Email" >
-                                </div>
-                                <div class="col-md-6">
-                              <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">phone number *</label>
-                                  <input type="number" class="form-control border-0" id="phone" name="phone"
-                                                   placeholder="Phone number" required="">
+                           
+                              <div class="mb-3">
+                                <div class="row">
+                                  <div class="col-md-12 mb-md-0 mb-4">
+                                <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">email address</label>
+                                    <input type="email" class="form-control border-0" id="email" name="email"
+                                                     placeholder="Email" >
+                                  </div>
+                              
                                 </div>
                               </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="row">
-                                <div class="col-md-12 mb-md-0 mb-4">
-                              <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Comment</label>
-                                  <textarea type="email" class="form-control border-0"
-                                                   placeholder="Leave Your Comment" ></textarea>
+
+                              <div class="mb-3">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">phone number *</label>
+                                        <input type="number" class="form-control border-0" id="phone" name="phone"
+                                                         placeholder="Phone number" required="">
+                                      </div>
+                              
                                 </div>
                               </div>
+
+                             
+                              <div class="mb-3">
+                                <div class="row">
+                                  <div class="col-md-12 mb-md-0 mb-4">
+                                <label class="mb-2 fs-13 letter-spacing-01 font-weight-600 text-uppercase">Comment</label>
+                                    <textarea type="email" class="form-control border-0"
+                                                     placeholder="Leave Your Comment" ></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="custom-control custom-checkbox mt-6 mb-5">
+                                <input type="checkbox" class="custom-control-input" name="customCheck6" checked=""
+                                             id="customCheck5">
+                                <label class="custom-control-label custom-control-label-secondary text-secondary"
+                                             for="customCheck5">
+                                  <span class="text-body">Billing address is the same as shipping</span>
+                                </label>
+                              </div>
+                       
                             </div>
-                            <div class="custom-control custom-checkbox mt-6 mb-5">
-                              <input type="checkbox" class="custom-control-input" name="customCheck6" checked=""
-                                           id="customCheck5">
-                              <label class="custom-control-label custom-control-label-secondary text-secondary"
-                                           for="customCheck5">
-                                <span class="text-body">Billing address is the same as shipping</span>
-                              </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb-10">
+                       
+                        
+                          <div class="pt-lg-0 pt-11">
+                            <div class="card border-0" style="box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)">
+                              <div class="card-body px-6 pt-5">
+                                <div class="d-flex align-items-center mb-2">
+                                  <span>Subtotal:</span>
+                                  <span class="d-block ml-auto text-secondary font-weight-bold">$99.00</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                  <span>Shipping:</span>
+                                  <span class="d-block ml-auto text-secondary font-weight-bold">$0</span>
+                                </div>
+                              </div>
+                              <div class="card-footer bg-transparent px-0 pb-4 mx-6">
+                                <div class="d-flex align-items-center font-weight-bold mb-3">
+                                  <span class="text-secondary">Total pricre:</span>
+                                  <span class="d-block ml-auto text-secondary fs-24 font-weight-bold">$99.00</span>
+                                </div>
+                                <div class="">
+                                  <h4 class="fs-24 mb-3">Coupon Discount</h4>
+                                  <p class="">Enter you coupon code if you have one.</p>
+                                  <form>
+                                    <input type="text" class="border-0 form-control mb-4" placeholder="Enter coupon code here">
+                                   
+                                  </form>
+                                </div>
+                                <button type="submit" class="btn btn-secondary btn-block bg-hover-primary border-hover-primary"
+                                              value="Check Out">Check Out
+                                </button>
+                              </div>
                             </div>
-                     
                           </div>
                         </div>
-                      </form>
-                 
-           
-            
+                        </div>
+                    </div>  
             <div class="text-center d-flex justify-content-center pb-3 finance-two">
               <a class="btn btnPrevious btn-secondary bg-hover-primary border-hover-primary mx-2" >السابق</a>
                 <a class="btn btnNext btn-secondary bg-hover-primary border-hover-primary" >التالي</a>
@@ -782,9 +843,9 @@
                 <div class="row">
                   <div class="col-md-12 m-auto text-center">
                     <h3 class="mb-5">تمت العملية بنجاح</h3>
-                    <!-- <img style="max-width: 100%;" src="images/approval-process-automation.png"/> -->
-                    <!-- <h6>يتم وضع صورة الفاتورة هنا</h6> -->
-                    <form class="table-responsive-md pb-8 pb-lg-10">
+                    <h6>صورة مؤقته يتم حذفها ووضع الفاتورة الالكترونية</h6>
+                    <img style="max-width: 100%;" src="images/approval-process-automation.png"/>
+                    <!-- <form class="table-responsive-md pb-8 pb-lg-10">
                       <table class="table border text-center justify-content-center align-items-center">
                         <thead style="background-color: #F5F5F5">
                           <tr class="fs-15 font-weight-600 text-uppercase text-secondary">
@@ -918,7 +979,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
             
